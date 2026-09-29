@@ -94,6 +94,18 @@ Archived task file (local checkout proof):
 
 Day folder listing: [`raw/sources/pos-done-2026-09-14.txt`](../raw/sources/pos-done-2026-09-14.txt).
 
+### Live product outcome (local Docker)
+
+Stack up on `127.0.0.1:4202`. The hub from #391 is real UI, not a mock.
+
+![Local Docker HTTP smoke](../raw/assets/08-docker-compose-ps-live.png)
+
+![Catalog & Inventory hub — live](../raw/assets/11-pos-live-catalog-inventory.png)
+
+![Dashboard — live](../raw/assets/12-pos-live-dashboard.png)
+
+Landing (public surface): ![Landing](../raw/assets/09-pos-live-landing.png)
+
 ### Where the roles live
 
 ![agents2 tree on GitHub](../raw/assets/03-agents2-tree.png)

@@ -21,6 +21,10 @@ Source: GitHub Issues API + UI filter `is:issue author:HammyHavoc is:closed`.
 | [`06-issue-391-agent-trail.png`](../raw/assets/06-issue-391-agent-trail.png) | Issue #391 (user request) |
 | [`07-done-archive-2026-09-14.png`](../raw/assets/07-done-archive-2026-09-14.png) | Archived CLOSED task content |
 | [`03-agents2-tree.png`](../raw/assets/03-agents2-tree.png) | Public `agents2/` layout |
+| [`08-docker-compose-ps-live.png`](../raw/assets/08-docker-compose-ps-live.png) | Local Docker: HTTP 200 on hub routes |
+| [`11-pos-live-catalog-inventory.png`](../raw/assets/11-pos-live-catalog-inventory.png) | Live Catalog & Inventory hub (#391) |
+| [`12-pos-live-dashboard.png`](../raw/assets/12-pos-live-dashboard.png) | Live Dashboard |
+| [`09-pos-live-landing.png`](../raw/assets/09-pos-live-landing.png) | Live marketing landing |
 
 ## Text evidence
 

@@ -9,5 +9,10 @@
 | 05-mac-stats-autoresearch.png | mac-stats `docs/autoresearch` |
 | 06-issue-391-agent-trail.png | Issue #391 (HammyHavoc request) |
 | 07-done-archive-2026-09-14.png | Archived CLOSED-391 task content |
+| 08-docker-compose-ps-live.png | Local Docker live: HTTP 200 smoke on `/`, hub, dashboard |
+| 09-pos-live-landing.png | Marketing landing at `127.0.0.1:4202` |
+| 10-pos-live-login.png | Login screen (local) |
+| 11-pos-live-catalog-inventory.png | **Live #391 outcome:** Catalog & Inventory hub |
+| 12-pos-live-dashboard.png | Live Dashboard (Demo Pizzeria) |
 
-Captured 2026-09-29.
+Captured 2026-09-29. Live Docker shots after stack start.

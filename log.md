@@ -14,3 +14,7 @@ Created `AGENTS.md`, `index.md`, `raw/`, `wiki/`, MIT license, Issues-only contr
 ## [2026-09-29] essay | No harness works best for me
 
 Wrote `wiki/essay-no-harness-works-best.md` plus concept/entity/proof pages. Customer private loop mentioned once; no internals.
+
+## [2026-09-29] ingest | Live Docker screenshots (satisfecho POS)
+
+Stack up on `:4202`. Captured landing, login, Docker HTTP smoke, authenticated Dashboard, and Catalog & Inventory hub (#391 outcome). Updated essay + proof pages.
