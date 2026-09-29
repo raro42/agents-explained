@@ -1,0 +1,200 @@
+----- 005 preflight digest: /var/folders/pm/lvxj2qcj03v2qqtb8sf5rryc0000gn/T/pos-agent-loop/005-latest-context.txt
+----- marketing repos (005) (skip: no new/changed repos, deploy candidates, or untracked marketing issues)
+----- Override: AGENT_MARKETING_REVIEWER_ALWAYS=1 or AGENT_005_SKIP_PREFLIGHT=1
+-----> enhancement reviewer (008) <----
+008 stamp rotate: archived=2 kept=100 archive=/Users/raro42/projects/pos2/agents2/008-enhancement-reviewer/time-of-last-review.archive.txt
+OK: tenant 1 has T01–T10 with correct seat counts.
+OK: tenant 1 has 8 waiting, 1 notified waiting-list entries (total=9).
+OK: tenant 1 has all 10 demo products (19 total products).
+OK: tenant 1 has 19 order_channel=satisfecho_delivery order(s).
+  (7 with courier_user_id assigned)
+OK: tenant 1 delivery settings fee_cents=249, postal_codes=['28001', '28013'], radius_meters=None.
+----- 008 preflight digest: /var/folders/pm/lvxj2qcj03v2qqtb8sf5rryc0000gn/T/pos-agent-loop/008-latest-context.txt
+----- enhancement (008) (skip: weekly not due and no preflight signals; days=0)
+----- Override: AGENT_ENHANCEMENT_REVIEWER_ALWAYS=1 or AGENT_008_SKIP_PREFLIGHT=1
+008 stamp rotate: skip (lines=100 <= keep=100)
+OK: tenant 1 has T01–T10 with correct seat counts.
+OK: tenant 1 has 8 waiting, 1 notified waiting-list entries (total=9).
+OK: tenant 1 has all 10 demo products (19 total products).
+OK: tenant 1 has 19 order_channel=satisfecho_delivery order(s).
+  (7 with courier_user_id assigned)
+OK: tenant 1 delivery settings fee_cents=249, postal_codes=['28001', '28013'], radius_meters=None.
+----- feature coding (FEAT): queue parked waiting for human — skipping batch (see /var/folders/pm/lvxj2qcj03v2qqtb8sf5rryc0000gn/T/pos-agent-loop/006-latest-context.txt)
+----- coding (skip: no NEW-*.md or WIP-*.md — no sync, no agent)
+----- feature coder handoff (012) (skip: no WIP-*.md — no sync, no agent)
+----- testing (skip: no UNTESTED-*.md or TESTING-*.md — no sync, no agent)
+----- closing reviewer (skip: no CLOSED-*.md in tasks/ — no sync, no agent)
+-----> git sync development 2026-09-22 20:18:08 <----
+From github.com:satisfecho/pos
+ * branch                development -> FETCH_HEAD
+Already up to date.
+-----> committer (changelog + commit, POS repo) <----
+----- committer (local: stamp-only dirty tree — leave uncommitted; no cursor-agent)
+## development...origin/development
+ M agents2/005-marketing-repos-reviewer/last-scan.json
+ M agents2/005-marketing-repos-reviewer/time-of-last-review.txt
+ M agents2/008-enhancement-reviewer/last-scan.json
+-----> daily promote (009) <----
+----- promote: git fetch origin development master
+From github.com:satisfecho/pos
+ * branch                development -> FETCH_HEAD
+ * branch                master     -> FETCH_HEAD
+----- promote: development=3dffa04b9 master=36e2258fd ahead=0 version=2.1.175
+----- promote: skip: master already contains development tip
+----- sleeping 5m (300s); next cycle ~ 2026-09-22 20:23:13 +0200
+Tue Sep 22 20:30:55 CEST 2026
+-----> log reviewer (001) <----
+grep: stdout: Broken pipe
+----- 001 local LLM log triage: auto (Ollama (Gemma4:latest) → llama.cpp @ http://127.0.0.1:8080/v1 (Bonsai-8B.gguf))
+agent-ollama-log-triage: Ollama empty or unavailable, trying llama.cpp (Bonsai-8B.gguf)
+agent-ollama-log-triage: empty model output (primary backends)
+----- 001 local LLM log triage: error or empty output — keeping Docker heuristics
+----- 001 preflight digest: /var/folders/pm/lvxj2qcj03v2qqtb8sf5rryc0000gn/T/pos-agent-loop/001-latest-context.txt
+----- log reviewer (001) (skip cursor-agent: local log review — Docker heuristics only, GitHub ok, zero untracked issues)
+-----> marketing repos reviewer (005) <----
+----- 005 preflight digest: /var/folders/pm/lvxj2qcj03v2qqtb8sf5rryc0000gn/T/pos-agent-loop/005-latest-context.txt
+----- marketing repos (005) (skip: no new/changed repos, deploy candidates, or untracked marketing issues)
+----- Override: AGENT_MARKETING_REVIEWER_ALWAYS=1 or AGENT_005_SKIP_PREFLIGHT=1
+-----> enhancement reviewer (008) <----
+008 stamp rotate: archived=2 kept=100 archive=/Users/raro42/projects/pos2/agents2/008-enhancement-reviewer/time-of-last-review.archive.txt
+OK: tenant 1 has T01–T10 with correct seat counts.
+OK: tenant 1 has 8 waiting, 1 notified waiting-list entries (total=9).
+OK: tenant 1 has all 10 demo products (19 total products).
+OK: tenant 1 has 19 order_channel=satisfecho_delivery order(s).
+  (7 with courier_user_id assigned)
+OK: tenant 1 delivery settings fee_cents=249, postal_codes=['28001', '28013'], radius_meters=None.
+----- 008 preflight digest: /var/folders/pm/lvxj2qcj03v2qqtb8sf5rryc0000gn/T/pos-agent-loop/008-latest-context.txt
+----- enhancement (008) (skip: weekly not due and no preflight signals; days=0)
+----- Override: AGENT_ENHANCEMENT_REVIEWER_ALWAYS=1 or AGENT_008_SKIP_PREFLIGHT=1
+008 stamp rotate: skip (lines=100 <= keep=100)
+OK: tenant 1 has T01–T10 with correct seat counts.
+OK: tenant 1 has 8 waiting, 1 notified waiting-list entries (total=9).
+OK: tenant 1 has all 10 demo products (19 total products).
+OK: tenant 1 has 19 order_channel=satisfecho_delivery order(s).
+  (7 with courier_user_id assigned)
+OK: tenant 1 delivery settings fee_cents=249, postal_codes=['28001', '28013'], radius_meters=None.
+----- feature coding (FEAT): queue parked waiting for human — skipping batch (see /var/folders/pm/lvxj2qcj03v2qqtb8sf5rryc0000gn/T/pos-agent-loop/006-latest-context.txt)
+----- coding (skip: no NEW-*.md or WIP-*.md — no sync, no agent)
+----- feature coder handoff (012) (skip: no WIP-*.md — no sync, no agent)
+----- testing (skip: no UNTESTED-*.md or TESTING-*.md — no sync, no agent)
+----- closing reviewer (skip: no CLOSED-*.md in tasks/ — no sync, no agent)
+-----> git sync development 2026-09-22 20:33:52 <----
+From github.com:satisfecho/pos
+ * branch                development -> FETCH_HEAD
+Already up to date.
+-----> committer (changelog + commit, POS repo) <----
+----- committer (local: stamp-only dirty tree — leave uncommitted; no cursor-agent)
+## development...origin/development
+ M agents2/005-marketing-repos-reviewer/last-scan.json
+ M agents2/005-marketing-repos-reviewer/time-of-last-review.txt
+ M agents2/008-enhancement-reviewer/last-scan.json
+-----> daily promote (009) <----
+----- promote: git fetch origin development master
+From github.com:satisfecho/pos
+ * branch                development -> FETCH_HEAD
+ * branch                master     -> FETCH_HEAD
+----- promote: development=3dffa04b9 master=36e2258fd ahead=0 version=2.1.175
+----- promote: skip: master already contains development tip
+----- sleeping 5m (300s); next cycle ~ 2026-09-22 20:38:58 +0200
+Tue Sep 22 21:46:29 CEST 2026
+-----> log reviewer (001) <----
+grep: stdout: Broken pipe
+----- 001 local LLM log triage: auto (Ollama (Gemma4:latest) → llama.cpp @ http://127.0.0.1:8080/v1 (Bonsai-8B.gguf))
+----- 001 preflight digest: /var/folders/pm/lvxj2qcj03v2qqtb8sf5rryc0000gn/T/pos-agent-loop/001-latest-context.txt
+----- log reviewer (001) (skip cursor-agent: local log review — Docker heuristics only, GitHub ok, zero untracked issues)
+-----> marketing repos reviewer (005) <----
+----- 005 preflight digest: /var/folders/pm/lvxj2qcj03v2qqtb8sf5rryc0000gn/T/pos-agent-loop/005-latest-context.txt
+----- marketing repos (005) (skip: no new/changed repos, deploy candidates, or untracked marketing issues)
+----- Override: AGENT_MARKETING_REVIEWER_ALWAYS=1 or AGENT_005_SKIP_PREFLIGHT=1
+-----> enhancement reviewer (008) <----
+008 stamp rotate: archived=2 kept=100 archive=/Users/raro42/projects/pos2/agents2/008-enhancement-reviewer/time-of-last-review.archive.txt
+OK: tenant 1 has T01–T10 with correct seat counts.
+OK: tenant 1 has 8 waiting, 1 notified waiting-list entries (total=9).
+OK: tenant 1 has all 10 demo products (19 total products).
+OK: tenant 1 has 19 order_channel=satisfecho_delivery order(s).
+  (7 with courier_user_id assigned)
+OK: tenant 1 delivery settings fee_cents=249, postal_codes=['28001', '28013'], radius_meters=None.
+----- 008 preflight digest: /var/folders/pm/lvxj2qcj03v2qqtb8sf5rryc0000gn/T/pos-agent-loop/008-latest-context.txt
+----- enhancement (008) (skip: weekly not due and no preflight signals; days=0)
+----- Override: AGENT_ENHANCEMENT_REVIEWER_ALWAYS=1 or AGENT_008_SKIP_PREFLIGHT=1
+008 stamp rotate: skip (lines=100 <= keep=100)
+OK: tenant 1 has T01–T10 with correct seat counts.
+OK: tenant 1 has 8 waiting, 1 notified waiting-list entries (total=9).
+OK: tenant 1 has all 10 demo products (19 total products).
+OK: tenant 1 has 19 order_channel=satisfecho_delivery order(s).
+  (7 with courier_user_id assigned)
+OK: tenant 1 delivery settings fee_cents=249, postal_codes=['28001', '28013'], radius_meters=None.
+----- feature coding (FEAT): queue parked waiting for human — skipping batch (see /var/folders/pm/lvxj2qcj03v2qqtb8sf5rryc0000gn/T/pos-agent-loop/006-latest-context.txt)
+----- coding (skip: no NEW-*.md or WIP-*.md — no sync, no agent)
+----- feature coder handoff (012) (skip: no WIP-*.md — no sync, no agent)
+----- testing (skip: no UNTESTED-*.md or TESTING-*.md — no sync, no agent)
+----- closing reviewer (skip: no CLOSED-*.md in tasks/ — no sync, no agent)
+-----> git sync development 2026-09-22 22:30:50 <----
+From github.com:satisfecho/pos
+ * branch                development -> FETCH_HEAD
+Already up to date.
+-----> committer (changelog + commit, POS repo) <----
+----- committer (local: stamp-only dirty tree — leave uncommitted; no cursor-agent)
+## development...origin/development
+ M agents2/005-marketing-repos-reviewer/last-scan.json
+ M agents2/005-marketing-repos-reviewer/time-of-last-review.txt
+ M agents2/008-enhancement-reviewer/last-scan.json
+-----> daily promote (009) <----
+----- promote: git fetch origin development master
+From github.com:satisfecho/pos
+ * branch                development -> FETCH_HEAD
+ * branch                master     -> FETCH_HEAD
+----- promote: development=3dffa04b9 master=36e2258fd ahead=0 version=2.1.175
+----- promote: skip: master already contains development tip
+----- sleeping 5m (300s); next cycle ~ 2026-09-22 22:35:56 +0200
+Wed Sep 23 06:11:17 CEST 2026
+-----> log reviewer (001) <----
+grep: stdout: Broken pipe
+----- 001 local LLM log triage: auto (Ollama (Gemma4:latest) → llama.cpp @ http://127.0.0.1:8080/v1 (Bonsai-8B.gguf))
+----- 001 local LLM log triage: SKIP (log heuristics downgraded by local model)
+----- 001 preflight digest: /var/folders/pm/lvxj2qcj03v2qqtb8sf5rryc0000gn/T/pos-agent-loop/001-latest-context.txt
+----- log reviewer (001) (skip: nothing for 001 — no open issues missing a task link, no log incident heuristics)
+----- Override: AGENT_LOG_REVIEWER_ALWAYS=1 or AGENT_001_SKIP_PREFLIGHT=1 (always invoke); AGENT_001_RUN_WHEN_GH_UNKNOWN=1 if gh failed but you still want a run; AGENT_001_LOCAL_LOG_REVIEWER=0 to invoke cursor-agent when only Docker heuristics fire.
+-----> marketing repos reviewer (005) <----
+----- 005 preflight digest: /var/folders/pm/lvxj2qcj03v2qqtb8sf5rryc0000gn/T/pos-agent-loop/005-latest-context.txt
+----- marketing repos (005) (skip: no new/changed repos, deploy candidates, or untracked marketing issues)
+----- Override: AGENT_MARKETING_REVIEWER_ALWAYS=1 or AGENT_005_SKIP_PREFLIGHT=1
+-----> enhancement reviewer (008) <----
+008 stamp rotate: archived=2 kept=100 archive=/Users/raro42/projects/pos2/agents2/008-enhancement-reviewer/time-of-last-review.archive.txt
+OK: tenant 1 has T01–T10 with correct seat counts.
+OK: tenant 1 has 8 waiting, 1 notified waiting-list entries (total=9).
+OK: tenant 1 has all 10 demo products (19 total products).
+OK: tenant 1 has 19 order_channel=satisfecho_delivery order(s).
+  (7 with courier_user_id assigned)
+OK: tenant 1 delivery settings fee_cents=249, postal_codes=['28001', '28013'], radius_meters=None.
+----- 008 preflight digest: /var/folders/pm/lvxj2qcj03v2qqtb8sf5rryc0000gn/T/pos-agent-loop/008-latest-context.txt
+----- enhancement (008) (skip: weekly not due and no preflight signals; days=0)
+----- Override: AGENT_ENHANCEMENT_REVIEWER_ALWAYS=1 or AGENT_008_SKIP_PREFLIGHT=1
+008 stamp rotate: skip (lines=100 <= keep=100)
+OK: tenant 1 has T01–T10 with correct seat counts.
+OK: tenant 1 has 8 waiting, 1 notified waiting-list entries (total=9).
+OK: tenant 1 has all 10 demo products (19 total products).
+OK: tenant 1 has 19 order_channel=satisfecho_delivery order(s).
+  (7 with courier_user_id assigned)
+OK: tenant 1 delivery settings fee_cents=249, postal_codes=['28001', '28013'], radius_meters=None.
+----- feature coding (FEAT): queue parked waiting for human — skipping batch (see /var/folders/pm/lvxj2qcj03v2qqtb8sf5rryc0000gn/T/pos-agent-loop/006-latest-context.txt)
+----- coding (skip: no NEW-*.md or WIP-*.md — no sync, no agent)
+----- feature coder handoff (012) (skip: no WIP-*.md — no sync, no agent)
+----- testing (skip: no UNTESTED-*.md or TESTING-*.md — no sync, no agent)
+----- closing reviewer (skip: no CLOSED-*.md in tasks/ — no sync, no agent)
+-----> git sync development 2026-09-23 06:34:36 <----
+ssh: connect to host github.com port 22: Undefined error: 0
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ERROR: git sync failed (conflicts, network, or missing origin/development). Resolve and retry.
+----- committer (skip: git sync failed)
+-----> daily promote (009) <----
+----- promote: git fetch origin development master
+ssh: connect to host github.com port 22: Undefined error: 0
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+----- daily promote (009) failed exit=128

@@ -1,0 +1,59 @@
+author:	raro42
+association:	member
+edited:	false
+status:	none
+--
+🤖 Agent 001: Added feature task for review. See `agents2/tasks/FEAT-391-20260914-1141-catalog-inventory-sub-dashboard.md`
+--
+author:	raro42
+association:	member
+edited:	false
+status:	none
+--
+🤖 Agent 010 (feature coder): **Implemented** Catalog & Inventory hub.
+
+- New route `/catalog-inventory` with dashboard-style tiles (products, catalog, inventory destinations).
+- Sidebar **Catalog & Inventory** label navigates to the hub; chevron still expands/collapses the submenu.
+- Child deep links unchanged. i18n for hub labels. Smoke: `node front/scripts/test-catalog-inventory-hub.mjs` PASS.
+- Task → **UNTESTED-391-…** for tester.
+--
+author:	raro42
+association:	member
+edited:	false
+status:	none
+--
+Tester started verification for Catalog & Inventory hub (`/catalog-inventory`). Task renamed UNTESTED → TESTING.
+--
+author:	raro42
+association:	member
+edited:	false
+status:	none
+--
+## Tester result: PASS
+
+Verified Catalog & Inventory hub on local Docker (`BASE_URL=http://127.0.0.1:4202`, `development`).
+
+- Sidebar label opens `/catalog-inventory`; chevron toggles submenu without leaving the hub.
+- All hub tiles reach the expected routes (Products, Catalog, inventory Items/Suppliers/Warehouses/POs/Stock/Reports).
+- Deep links and mobile one-column layout + drawer close after hub nav: OK.
+- `front/scripts/test-catalog-inventory-hub.mjs`: PASS.
+- No front/back compile or 500 errors in the test log window.
+
+Task renamed **TESTING → CLOSED**. Full evidence is in the task **Test report**.
+--
+author:	raro42
+association:	member
+edited:	false
+status:	none
+--
+## Closing review
+
+Catalog & Inventory hub (`/catalog-inventory`) delivered and verified.
+
+- Sidebar label opens the hub; chevron still toggles the nested menu.
+- Tiles reach products, catalog, and inventory routes.
+- Tester overall **PASS** (manual + `test-catalog-inventory-hub.mjs`).
+- Task archived: `agents2/tasks/done/2026/09/14/CLOSED-391-20260914-1141-catalog-inventory-sub-dashboard.md`
+
+Closing this issue as fully delivered.
+--

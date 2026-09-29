@@ -1,0 +1,290 @@
+[
+  {
+    "number": 360,
+    "title": "Add floating CTA and order total to menu, order page, and cart",
+    "state": "closed",
+    "created_at": "2026-09-14T07:46:54Z",
+    "closed_at": "2026-09-14T11:34:32Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/360"
+  },
+  {
+    "number": 362,
+    "title": "Add way to delete `Loyalty Club` members",
+    "state": "closed",
+    "created_at": "2026-09-14T10:11:29Z",
+    "closed_at": "2026-09-15T08:14:16Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/362"
+  },
+  {
+    "number": 364,
+    "title": "Add navigation menu/tabs to public menu, booking form etc",
+    "state": "closed",
+    "created_at": "2026-09-14T10:19:20Z",
+    "closed_at": "2026-09-17T08:43:09Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/364"
+  },
+  {
+    "number": 365,
+    "title": "Add `#` anchors to URL in `/settings`",
+    "state": "closed",
+    "created_at": "2026-09-14T10:21:05Z",
+    "closed_at": "2026-09-15T10:19:55Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/365"
+  },
+  {
+    "number": 366,
+    "title": "Default to `Business Name` in `Settings` for `From name` in `Email (SMTP)`",
+    "state": "closed",
+    "created_at": "2026-09-14T10:24:23Z",
+    "closed_at": "2026-09-15T08:28:10Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/366"
+  },
+  {
+    "number": 367,
+    "title": "`RAL5002 (AZUL)` in `/settings` just seems to overwrite the user's hex code",
+    "state": "closed",
+    "created_at": "2026-09-14T10:26:33Z",
+    "closed_at": "2026-09-15T10:10:33Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/367"
+  },
+  {
+    "number": 368,
+    "title": "Consolidate `Party size:` and `Party size` on `/book/`",
+    "state": "closed",
+    "created_at": "2026-09-14T10:28:35Z",
+    "closed_at": "2026-09-14T17:11:42Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/368"
+  },
+  {
+    "number": 369,
+    "title": "Move `Time slot` on `/booking/`",
+    "state": "closed",
+    "created_at": "2026-09-14T10:30:01Z",
+    "closed_at": "2026-09-15T10:42:00Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/369"
+  },
+  {
+    "number": 370,
+    "title": "Allow changing colours of buttons",
+    "state": "closed",
+    "created_at": "2026-09-14T10:32:04Z",
+    "closed_at": "2026-09-15T11:13:38Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/370"
+  },
+  {
+    "number": 371,
+    "title": "`Default tax (IVA)` in `/settings` > `Contact Information` doesn't save changes and is out of place",
+    "state": "closed",
+    "created_at": "2026-09-14T10:35:17Z",
+    "closed_at": "2026-09-15T09:24:50Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/371"
+  },
+  {
+    "number": 372,
+    "title": "A way for customers and staff to find their loyalty info again",
+    "state": "closed",
+    "created_at": "2026-09-14T10:38:19Z",
+    "closed_at": "2026-09-14T15:41:45Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/372"
+  },
+  {
+    "number": 373,
+    "title": "Going to `/loyalty/` embeds Satisfecho website",
+    "state": "closed",
+    "created_at": "2026-09-14T10:39:24Z",
+    "closed_at": "2026-09-14T12:34:36Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/373"
+  },
+  {
+    "number": 374,
+    "title": "Consider adding CTAs to `/loyalty/card/`, `/loyalty/1` etc for menu, reservations, and deliveries",
+    "state": "closed",
+    "created_at": "2026-09-14T10:41:27Z",
+    "closed_at": "2026-09-15T11:03:08Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/374"
+  },
+  {
+    "number": 376,
+    "title": "Add floating header to public pages like `/book/1` to always display branding, links to other pages like menu etc",
+    "state": "closed",
+    "created_at": "2026-09-14T10:47:17Z",
+    "closed_at": "2026-09-14T13:00:06Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/376"
+  },
+  {
+    "number": 377,
+    "title": "Copy button for 2FA key in `/settings` > `Security` not working",
+    "state": "closed",
+    "created_at": "2026-09-14T10:49:57Z",
+    "closed_at": "2026-09-14T12:07:18Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/377"
+  },
+  {
+    "number": 383,
+    "title": "Change `Log Out` button to be a subtle icon to left of `POS` at top of sidebar",
+    "state": "closed",
+    "created_at": "2026-09-14T11:07:05Z",
+    "closed_at": "2026-09-15T07:57:44Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/383"
+  },
+  {
+    "number": 384,
+    "title": "Change language drop-down in sidebar to be a flat icon to the right of the `POS` at the top of the sidebar",
+    "state": "closed",
+    "created_at": "2026-09-14T11:10:32Z",
+    "closed_at": "2026-09-15T10:30:25Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/384"
+  },
+  {
+    "number": 385,
+    "title": "`Catalog & Inventory` alignment is off in sidebar menu",
+    "state": "closed",
+    "created_at": "2026-09-14T11:15:24Z",
+    "closed_at": "2026-09-15T10:52:41Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/385"
+  },
+  {
+    "number": 386,
+    "title": "`Back to home` on `/public-menu/1` takes users to embedded Satisfecho site",
+    "state": "closed",
+    "created_at": "2026-09-14T11:17:01Z",
+    "closed_at": "2026-09-14T15:06:05Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/386"
+  },
+  {
+    "number": 387,
+    "title": "Allow showing currency symbol on public pages like `/public-menu/1`",
+    "state": "closed",
+    "created_at": "2026-09-14T11:18:59Z",
+    "closed_at": "2026-09-15T07:22:20Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/387"
+  },
+  {
+    "number": 388,
+    "title": "`Product Categories` button in `Products` is redundant due to tabs; means `Products` button is also redundant",
+    "state": "closed",
+    "created_at": "2026-09-14T11:21:19Z",
+    "closed_at": "2026-09-17T08:31:06Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/388"
+  },
+  {
+    "number": 389,
+    "title": "Log how long a table was or has been `Active` for and when",
+    "state": "closed",
+    "created_at": "2026-09-14T11:25:09Z",
+    "closed_at": "2026-09-14T14:35:43Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/389"
+  },
+  {
+    "number": 390,
+    "title": "Hyperlink `POS` at top of sidebar to `/dashboard`",
+    "state": "closed",
+    "created_at": "2026-09-14T11:26:49Z",
+    "closed_at": "2026-09-14T16:11:06Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/390"
+  },
+  {
+    "number": 391,
+    "title": "Add a `/dashboard`-style sub-dashboard when a user taps/clicks `Catalog & Inventory`",
+    "state": "closed",
+    "created_at": "2026-09-14T11:32:58Z",
+    "closed_at": "2026-09-14T17:01:16Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/391"
+  },
+  {
+    "number": 392,
+    "title": "Add conditional logic based on `Country (ISO code)` and `Select currency` to show/hide the likes of `KassenSichV preparation` and `VeriFactu preparation` in `/settings`",
+    "state": "closed",
+    "created_at": "2026-09-14T11:35:48Z",
+    "closed_at": "2026-09-15T06:47:01Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/392"
+  },
+  {
+    "number": 393,
+    "title": "Add conditional logic to show/hide Wallet-related info on `loyalty/1`",
+    "state": "closed",
+    "created_at": "2026-09-14T11:40:08Z",
+    "closed_at": "2026-09-15T06:11:12Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/393"
+  },
+  {
+    "number": 394,
+    "title": "Hyperlink `docs/0066-club-loyalty.md` in `/settings` > `Loyalty club`",
+    "state": "closed",
+    "created_at": "2026-09-14T11:41:39Z",
+    "closed_at": "2026-09-14T14:05:30Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/394"
+  },
+  {
+    "number": 395,
+    "title": "Replace horizontal scrolling of tabs in `/settings` with a vertical menu system",
+    "state": "closed",
+    "created_at": "2026-09-14T11:49:25Z",
+    "closed_at": "2026-09-15T08:56:37Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/395"
+  },
+  {
+    "number": 396,
+    "title": "Break down `Payment Settings` into further config areas",
+    "state": "closed",
+    "created_at": "2026-09-14T11:56:28Z",
+    "closed_at": "2026-09-15T09:35:36Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/396"
+  },
+  {
+    "number": 397,
+    "title": "Hyperlink `docs/0070-hardware-printing.md` in `Settings` > `Printing`",
+    "state": "closed",
+    "created_at": "2026-09-14T11:59:04Z",
+    "closed_at": "2026-09-14T17:32:06Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/397"
+  },
+  {
+    "number": 398,
+    "title": "Hide `NAME` and `TYPE` in `/settings` > `Providers` when no `provider` has been added yet",
+    "state": "closed",
+    "created_at": "2026-09-14T12:01:25Z",
+    "closed_at": "2026-09-15T06:11:08Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/398"
+  },
+  {
+    "number": 399,
+    "title": "Hyperlink version number beneath `POS` in sidebar to invoke changelog like `What's new` on `/dashboard` does",
+    "state": "closed",
+    "created_at": "2026-09-14T12:07:53Z",
+    "closed_at": "2026-09-14T17:21:53Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/399"
+  },
+  {
+    "number": 400,
+    "title": "Add recovery codes for 2FA",
+    "state": "closed",
+    "created_at": "2026-09-14T12:13:41Z",
+    "closed_at": "2026-09-15T10:00:53Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/400"
+  },
+  {
+    "number": 401,
+    "title": "Remove, or add toggle, for needing to enter 2FA code to actually remove the 2FA on account whilst logged in",
+    "state": "closed",
+    "created_at": "2026-09-14T12:20:15Z",
+    "closed_at": "2026-09-15T07:47:19Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/401"
+  },
+  {
+    "number": 402,
+    "title": "`Logout` button at bottom of sidebar takes users to embedded Satisfecho site",
+    "state": "closed",
+    "created_at": "2026-09-14T12:23:01Z",
+    "closed_at": "2026-09-15T07:32:02Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/402"
+  },
+  {
+    "number": 403,
+    "title": "Change email address for `Contact us` on login footer",
+    "state": "closed",
+    "created_at": "2026-09-14T12:24:49Z",
+    "closed_at": "2026-09-14T16:49:21Z",
+    "html_url": "https://github.com/satisfecho/pos/issues/403"
+  }
+]
