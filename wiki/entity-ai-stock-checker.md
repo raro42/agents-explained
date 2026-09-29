@@ -1,6 +1,8 @@
 # Entity — raro42/ai-stock-checker
 
-Local Docker-first stock/crypto checker. Overnight improve loop; Ollama for cheap strategy work.
+Local Docker-first stock/crypto checker and paper trader.
+
+Overnight improve loop. Strategy work prefers Ollama. Product code uses Cursor when needed. Same idea as POS: cheap local steps first, paid coder only for edits.
 
 | Field | Value |
 |-------|-------|
@@ -11,3 +13,4 @@ Local Docker-first stock/crypto checker. Overnight improve loop; Ollama for chea
 
 - [Essay](essay-no-harness-works-best.md)
 - [Local fallback](concept-local-fallback.md)
+- [Tried the harnesses](concept-tried-the-harnesses.md)

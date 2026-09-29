@@ -1,12 +1,14 @@
 # No harness works best for me
 
+Meaning: no agent framework. The loop is bash, folder names, and gh. Cursor is a worker.
+
 **Date:** 2026-09-29  
 **Author:** [@raro42](https://github.com/raro42)  
 **Repo:** [raro42/agents-explained](https://github.com/raro42/agents-explained)
 
 Most agent posts sell a new framework. I sell the opposite.
 
-I run product work with a **thin shell loop**, markdown task files, and local models for triage. The “harness” is mostly `bash`, `gh`, and folder renames. Cursor (or another coder agent) is a **worker**, not the brain.
+I run product work with a **thin shell loop**, markdown task files, and local models for triage. The loop is mostly `bash`, `gh`, and folder renames. Cursor (or another coder agent) is a **worker**, not the brain.
 
 This page is the long form behind an X post. Screenshots and exports live under [`raw/`](../raw/).
 
@@ -69,7 +71,7 @@ Same spine shows up in public trees:
 - [raro42/mac-stats `agents/`](https://github.com/raro42/mac-stats/tree/main/agents) — product + autoresearch (thin loop after cutting harness fat)
 - [raro42/ai-stock-checker `AGENTS.md`](https://github.com/raro42/ai-stock-checker/blob/main/AGENTS.md) — overnight improve loop
 
-We also run the **same loop pattern** on a **private customer repo**. No internals here. That is the enterprise claim: company data, local decisions, thin orchestration.
+We also run the same loop pattern on a private customer repo. No internals here.
 
 ---
 
