@@ -49,5 +49,5 @@ Read this first. Then open linked pages.
 
 | Path | Summary |
 |------|---------|
-| [raw/assets/](raw/assets/) | Screenshots |
+| [raw/assets/README.md](raw/assets/README.md) | Screenshot index |
 | [raw/sources/](raw/sources/) | Issue JSON, log tails, agent trail text |
