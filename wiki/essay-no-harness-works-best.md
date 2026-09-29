@@ -2,7 +2,7 @@
 
 Meaning: no agent framework. The loop is bash, folder names, and gh. Cursor is a worker.
 
-Coder slot is swappable: Cursor, Claude Code, OpenCode — whatever can edit the tree. The loop does not care.
+Coder slot is swapable: Cursor, Claude Code, OpenCode, whatever can edit the tree. The loop does not care.
 
 **Date:** 2026-09-29  
 **Author:** [@raro42](https://github.com/raro42)  
@@ -205,7 +205,7 @@ Agent coding loops and autoresearch share one spine: **metric, budget, revert on
 3. Task files as the only queue.  
 4. Preflight before every paid agent call.  
 5. Local model for classify / triage / close text.  
-6. Cloud coder only for hard edits.  
+6. Cloud/IDE coder only for hard edits (Cursor, Claude Code, OpenCode, …).  
 7. Comment the issue with each stage so humans can audit.
 
 Do not start with a multi-agent product. Start with a timer and a folder.
