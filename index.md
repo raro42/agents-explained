@@ -18,6 +18,7 @@ Read this first. Then open linked pages.
 | Page | Summary |
 |------|---------|
 | [wiki/concept-agent-loop.md](wiki/concept-agent-loop.md) | Shell orchestrator + markdown roles + task queue |
+| [wiki/concept-tried-the-harnesses.md](wiki/concept-tried-the-harnesses.md) | Why thin: pi, OpenCode, Hermes, OpenClaw, mac-stats harness |
 | [wiki/concept-local-fallback.md](wiki/concept-local-fallback.md) | Local control plane; cloud coder as worker; outages |
 | [wiki/concept-decision-models.md](wiki/concept-decision-models.md) | Laya / typed labels for preflight and results |
 

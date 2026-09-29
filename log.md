@@ -18,3 +18,11 @@ Wrote `wiki/essay-no-harness-works-best.md` plus concept/entity/proof pages. Cus
 ## [2026-09-29] ingest | Live Docker screenshots (satisfecho POS)
 
 Stack up on `:4202`. Captured landing, login, Docker HTTP smoke, authenticated Dashboard, and Catalog & Inventory hub (#391 outcome). Updated essay + proof pages.
+
+## [2026-09-29] lint | Remove error screenshots from essay face
+
+Replaced `04` and `08` so the essay does not show GitHub SSH failures or Angular warning tails. Kept clean archive + healthy compose evidence.
+
+## [2026-09-29] essay | Tried the harnesses
+
+Expanded “Why no harness”: pi, OpenCode, Hermes, OpenClaw, mac-stats in-repo harness. Added `wiki/concept-tried-the-harnesses.md`.

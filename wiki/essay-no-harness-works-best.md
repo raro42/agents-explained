@@ -39,9 +39,21 @@ When cloud models fail, the **control plane** still runs: preflight, stamps, ski
 
 ## Why “no harness”
 
-Heavy agent frameworks hide the control flow. When something breaks, you debug the framework.
+This is not a hot take from the sidelines. I ran the big ones.
 
-My loop is readable:
+| Tried | What I learned |
+|-------|----------------|
+| [pi](https://pi.dev) / Pi-style local agent loops | Strong idea. Still a product surface between you and the work. |
+| OpenCode | Good for “agent in a box.” Control flow lives in someone else’s release. |
+| Hermes | Useful pieces. Not a full factory for issue → code → test → close. |
+| OpenClaw (any flavor) | Ambitious. Also heavy. Updater churn and surprise breaks are real. |
+| Harness code inside [mac-stats](https://github.com/raro42/mac-stats) itself | Even *my* thicker harness grew holes. I kept cutting it back. |
+
+Harnesses are big. They have holes. They break every once in a while — yes, OpenClaw updaters, I am looking at you.
+
+When something fails at 3 a.m., I want to read **fifty lines of bash and a task filename**, not a framework stack.
+
+So the loop I keep is thin on purpose:
 
 | Piece | What it is |
 |-------|------------|
@@ -54,7 +66,7 @@ My loop is readable:
 Same spine shows up in public trees:
 
 - [satisfecho/pos `agents2/`](https://github.com/satisfecho/pos/tree/master/agents2) — production POS loop (`pos-cursor-loop.sh`)
-- [raro42/mac-stats `agents/`](https://github.com/raro42/mac-stats/tree/main/agents) — product + autoresearch
+- [raro42/mac-stats `agents/`](https://github.com/raro42/mac-stats/tree/main/agents) — product + autoresearch (thin loop after cutting harness fat)
 - [raro42/ai-stock-checker `AGENTS.md`](https://github.com/raro42/ai-stock-checker/blob/main/AGENTS.md) — overnight improve loop
 
 We also run the **same loop pattern** on a **private customer repo**. No internals here. That is the enterprise claim: company data, local decisions, thin orchestration.
@@ -129,9 +141,9 @@ Examples from POS:
 
 That is the “no harness” move: **shell decides if an LLM is needed**.
 
-Live idle cycle (skips + preflight): [`raw/sources/pos-cursor-loop-log-tail.txt`](../raw/sources/pos-cursor-loop-log-tail.txt).
+Idle cycle: preflight skips, no Cursor burn. Clean extract: [`raw/sources/pos-cursor-loop-preflight-skips-clean.txt`](../raw/sources/pos-cursor-loop-preflight-skips-clean.txt).
 
-![Loop log showing skips](../raw/assets/04-done-archive-and-loop-log.png)
+![Preflight skips + done archive](../raw/assets/04-done-archive-and-loop-log.png)
 
 ---
 
