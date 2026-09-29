@@ -16,6 +16,15 @@ Coder slot is swapable: Cursor, Claude Code, OpenCode, whatever can edit the tre
 4. Preflight before every paid agent call.
 5. Local model for triage; Cursor only for hard edits.
 
+## Adopt
+
+This repo explains the pattern. It does not install it.
+
+Copy `agents2/` + `pos-cursor-loop.sh` from
+https://github.com/satisfecho/pos/tree/master/agents2
+into your repo. Point your coder at that folder.
+Swap Cursor for Claude Code / OpenCode if you want; keep the shell loop.
+
 ## Proof
 
 HammyHavoc filed a large batch on [satisfecho/pos](https://github.com/satisfecho/pos). **36 closed**, **0 open** at capture (2026-09-29). Trail for [#391](https://github.com/satisfecho/pos/issues/391): reviewer → coder → tester → close.
