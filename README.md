@@ -4,6 +4,8 @@
 
 Meaning: no agent framework. The loop is bash, folder names, and gh. Cursor is a worker.
 
+Coder slot is swappable: Cursor, Claude Code, OpenCode — whatever can edit the tree. The loop does not care.
+
 → **Essay:** [wiki/essay-no-harness-works-best.md](wiki/essay-no-harness-works-best.md)
 
 ## What to copy
