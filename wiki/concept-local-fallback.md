@@ -4,7 +4,7 @@
 
 ## Why it matters
 
-Overlapping cloud AI outages (e.g. September 2026) showed that “agent = one vendor API” fails together. A shell loop with Ollama triage still:
+Overlapping cloud AI outages (e.g. September 2026) showed that “agent = one vendor API” fails together. A shell loop with local decisions still:
 
 - runs preflight
 - skips empty queues
@@ -12,6 +12,10 @@ Overlapping cloud AI outages (e.g. September 2026) showed that “agent = one ve
 - drafts SKIP / ESCALATE on logs
 
 Coder quality drops when Cursor’s upstream models degrade. The **factory** does not vanish.
+
+## Decision plane fallbacks
+
+Prefer **self-hosted Laya** for tool coordination and answer quality when private data is in play. If Laya is down or confidence is low, fall back to shell rules or Ollama. Do not block the loop. See [decision models](concept-decision-models.md).
 
 ## POS defaults (public docs)
 
@@ -25,3 +29,4 @@ Detail: POS [`docs/agent-loop.md`](https://github.com/satisfecho/pos/blob/master
 
 - [Essay](essay-no-harness-works-best.md)
 - [Decision models](concept-decision-models.md)
+

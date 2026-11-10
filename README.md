@@ -14,7 +14,8 @@ Coder slot is swapable: Cursor, Claude Code, OpenCode, whatever can edit the tre
 2. Role prompts as markdown.
 3. Task files as the only queue (`FEAT` → `WIP` → `UNTESTED` → `TESTING` → `CLOSED`).
 4. Preflight before every paid agent call.
-5. Local model for triage; Cursor only for hard edits.
+5. Decision plane: Laya tool coordinator + answer quality gate (rules/Ollama fallback).
+6. Cursor (or another coder) only for hard edits.
 
 ## Adopt
 

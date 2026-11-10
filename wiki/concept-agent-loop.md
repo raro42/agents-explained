@@ -1,6 +1,6 @@
 # Concept — thin agent loop
 
-**Summary:** A timer-driven shell script moves work through markdown roles. Cursor is a step, not the system.
+**Summary:** A timer-driven shell script moves work through markdown roles. Cursor is a step, not the system. Laya sits in two decision slots around the generative worker.
 
 ## Stages (POS naming)
 
@@ -13,6 +13,15 @@
 | 004 / 030 | Closing reviewer | Archive under `done/YYYY/MM/DD/` |
 | 007 / 040 | Committer | Changelog, commit, issue comments |
 | 009 | Promote | Optional `development` → `master` cadence |
+
+## Decision slots (Laya)
+
+| Slot | Placement | Job |
+|------|-----------|-----|
+| Tool coordinator | After shell preflight, before 006 / 010 / 002 (and similar workers) | Choice: next tool / action / skip / escalate |
+| Answer quality gate | After 003 (or other generative result), before close / archive | Score or Bool: keep / one repair / reopen |
+
+Low confidence → rules or Ollama. Laya does not generate code. See [decision models](concept-decision-models.md).
 
 ## Orchestrator
 

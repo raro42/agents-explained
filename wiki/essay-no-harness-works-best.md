@@ -22,22 +22,25 @@ This page is the long form behind an X post. Screenshots and exports live under 
 GitHub issue
     │
     ▼
-shell preflight          ← cheap; skip Cursor if nothing to do
+shell preflight               ← cheap; skip worker if nothing to do
     │
     ▼
-local model (Ollama)     ← classify / triage / draft tasks
+Laya tool coordinator         ← typed next action / skip / escalate
+    │                            (rules / Ollama if confidence low)
+    ▼
+coder agent (Cursor, …)       ← edit product code
     │
     ▼
-coder agent (Cursor)     ← edit product code
+tester                        ← evidence required
     │
     ▼
-tester                   ← evidence required
+Laya answer quality gate      ← keep / one repair / reopen
     │
     ▼
-commit + review + close  ← local where possible; link back to the issue
+commit + review + close       ← local where possible; link back to the issue
 ```
 
-When cloud models fail, the **control plane** still runs: preflight, stamps, skips, local triage. Cloud is optional capacity for hard edits.
+When cloud models fail, the **control plane** still runs: preflight, stamps, skips, local decisions. Cloud is optional capacity for hard edits.
 
 ---
 
@@ -65,7 +68,8 @@ So the loop I keep is thin on purpose:
 | Roles | Markdown prompts (`001` reviewer, coder, tester, closer, committer) |
 | Queue | Task files: `FEAT-` → `WIP-` → `UNTESTED-` → `TESTING-` → `CLOSED-` → `done/YYYY/MM/DD/` |
 | Gates | Shell preflights — no agent call if the queue is empty |
-| Local AI | Ollama (and optional llama.cpp) for log triage and cheap labels |
+| Decision plane | Laya (integrating): tool coordinator + answer quality gate |
+| Local AI | Ollama / rules fallback when Laya confidence is low or Laya is down |
 
 Same spine shows up in public trees:
 
@@ -160,7 +164,7 @@ My split:
 | Layer | Runs where | Outage behaviour |
 |-------|------------|------------------|
 | Shell loop + git + `gh` | Laptop / host | Keeps ticking |
-| Ollama triage / classify | Local | Still labels SKIP vs ESCALATE |
+| Laya / Ollama / rules | Local decision plane | Still labels next action and quality |
 | Cursor coder | Cloud models behind Cursor | Degrades when providers fail |
 | Tester / archive scripts | Local evidence | Still verifies what already shipped |
 
@@ -170,21 +174,27 @@ Lesson: **keep decisions local; rent generation.** Company data stays off random
 
 ## Decision models (Laya), not chat-as-classifier
 
-Preflight and result gates need a **label + confidence**, not a paragraph.
+We are integrating [Laya](https://github.com/NandhaKishorM/laya) (Apache 2.0, self-host) as the **decision plane** in the thin loop — not as another chat model.
 
-That is the [Laya](https://github.com/NandhaKishorM/laya) idea (Apache 2.0, self-host): typed Choice / Bool / Score. See also [Jev vs Laya](https://dev.to/jamilxt/jev-vs-laya-the-same-ai-idea-one-closed-and-one-open-3c6e). Closed cloud “System One” APIs (e.g. Jev) are the wrong shape for private customer data.
+Two jobs:
 
-In the loop:
+| Job | When | What it returns |
+|-----|------|-----------------|
+| **Tool coordinator** | Before the generative worker | Next tool / action / skip / escalate (+ confidence) |
+| **Answer quality gate** | After coder, tester, or chat result | Keep / one repair / reopen |
+
+Typed Choice / Bool / Score — a **label + confidence**, not a paragraph. See [Jev vs Laya](https://dev.to/jamilxt/jev-vs-laya-the-same-ai-idea-one-closed-and-one-open-3c6e). Closed cloud “System One” APIs (e.g. Jev) are the wrong shape for private customer data.
 
 ```text
 issue / log signal
-  → decision (label + confidence) or rules fallback
+  → shell preflight
+  → Laya tool coordinator (or rules / Ollama if weak confidence)
   → only then spawn coder / tester
 result
-  → keep / reopen / close (again: label, not essay)
+  → Laya answer quality gate → keep / one repair / reopen
 ```
 
-I do **not** need a second giant chat model to say “this is a FEAT.” I need a small decision.
+I do **not** need a second giant chat model to say “run the coder” or “this answer is good enough.” I need a small decision. Detail: [concept-decision-models.md](concept-decision-models.md).
 
 ---
 
@@ -204,7 +214,7 @@ Agent coding loops and autoresearch share one spine: **metric, budget, revert on
 2. Role prompts as markdown.  
 3. Task files as the only queue.  
 4. Preflight before every paid agent call.  
-5. Local model for classify / triage / close text.  
+5. Decision plane: Laya tool coordinator + answer quality gate (rules/Ollama fallback).  
 6. Cloud/IDE coder only for hard edits (Cursor, Claude Code, OpenCode, …).  
 7. Comment the issue with each stage so humans can audit.
 
