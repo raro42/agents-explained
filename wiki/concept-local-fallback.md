@@ -15,7 +15,7 @@ Coder quality drops when Cursor’s upstream models degrade. The **factory** doe
 
 ## Decision plane fallbacks
 
-Prefer **self-hosted Laya** for tool coordination and answer quality when private data is in play. If Laya is down or confidence is low, fall back to shell rules or Ollama. Do not block the loop. See [decision models](concept-decision-models.md).
+Prefer **self-hosted [Laya](https://github.com/NandhaKishorM/laya)** for tool coordination and answer quality when private data is in play. If Laya is down or confidence is low, fall back to shell rules or Ollama. Do not block the loop. See [decision models](concept-decision-models.md).
 
 ## POS defaults (public docs)
 

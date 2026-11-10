@@ -1,4 +1,4 @@
-# Concept — decision models (Laya-shaped)
+# Concept — decision models ([Laya](https://github.com/NandhaKishorM/laya)-shaped)
 
 **Summary:** Classification and gates need typed labels, not chat prose. We are integrating [Laya](https://github.com/NandhaKishorM/laya) as the decision plane: **tool coordinator** before the worker, **answer quality gate** after it.
 
@@ -6,7 +6,7 @@
 
 | Item | Link |
 |------|------|
-| Laya (open, Apache 2.0) | https://github.com/NandhaKishorM/laya |
+| [Laya](https://github.com/NandhaKishorM/laya) (open, Apache 2.0) | https://github.com/NandhaKishorM/laya |
 | Weights | https://huggingface.co/convaiinnovations/laya |
 | PyPI | https://pypi.org/project/laya/ |
 | Docs | https://laya.studio/docs |
@@ -15,7 +15,7 @@
 
 ## Two jobs in the loop
 
-Laya does **not** write chat or code. It decides. Cursor / Claude Code / OpenCode / a local LLM generate.
+[Laya](https://github.com/NandhaKishorM/laya) does **not** write chat or code. It decides. Cursor / Claude Code / OpenCode / a local LLM generate.
 
 | Job | When | Shape | Outcome |
 |-----|------|-------|---------|
@@ -45,7 +45,7 @@ issue / ask
 
 ## Adoption rules
 
-1. **Shadow first.** Log Laya labels beside rules. Do not block until the bench is green.
+1. **Shadow first.** Log [Laya](https://github.com/NandhaKishorM/laya) labels beside rules. Do not block until the bench is green.
 2. **Fail-open.** Below a confidence floor, use shell rules or Ollama. Do not stall the loop.
 3. **Self-host for private data.** Closed cloud classifiers add egress risk.
 4. Public product trees may still use Ollama for triage until Laya clients land. Same roles; swap the head later.

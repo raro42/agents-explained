@@ -11,16 +11,16 @@ Read this first. Then open linked pages.
 
 | Page | Summary |
 |------|---------|
-| [wiki/essay-no-harness-works-best.md](wiki/essay-no-harness-works-best.md) | Main post: thin loop, HammyHavoc proof, local fallbacks, Laya coordinator + quality gate |
+| [wiki/essay-no-harness-works-best.md](wiki/essay-no-harness-works-best.md) | Main post: thin loop, HammyHavoc proof, local fallbacks, [Laya](https://github.com/NandhaKishorM/laya) coordinator + quality gate |
 
 ## Concepts
 
 | Page | Summary |
 |------|---------|
-| [wiki/concept-agent-loop.md](wiki/concept-agent-loop.md) | Shell orchestrator + markdown roles + Laya decision slots |
+| [wiki/concept-agent-loop.md](wiki/concept-agent-loop.md) | Shell orchestrator + markdown roles + [Laya](https://github.com/NandhaKishorM/laya) decision slots |
 | [wiki/concept-tried-the-harnesses.md](wiki/concept-tried-the-harnesses.md) | Why thin: pi, OpenCode, Hermes, OpenClaw, mac-stats harness |
-| [wiki/concept-local-fallback.md](wiki/concept-local-fallback.md) | Local control plane; Laya/Ollama/rules fallback; outages |
-| [wiki/concept-decision-models.md](wiki/concept-decision-models.md) | Laya tool coordinator + answer quality gate |
+| [wiki/concept-local-fallback.md](wiki/concept-local-fallback.md) | Local control plane; [Laya](https://github.com/NandhaKishorM/laya)/Ollama/rules fallback; outages |
+| [wiki/concept-decision-models.md](wiki/concept-decision-models.md) | [Laya](https://github.com/NandhaKishorM/laya) tool coordinator + answer quality gate |
 
 ## Entities
 

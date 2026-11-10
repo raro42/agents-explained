@@ -68,7 +68,7 @@ So the loop I keep is thin on purpose:
 | Roles | Markdown prompts (`001` reviewer, coder, tester, closer, committer) |
 | Queue | Task files: `FEAT-` → `WIP-` → `UNTESTED-` → `TESTING-` → `CLOSED-` → `done/YYYY/MM/DD/` |
 | Gates | Shell preflights — no agent call if the queue is empty |
-| Decision plane | Laya (integrating): tool coordinator + answer quality gate |
+| Decision plane | [Laya](https://github.com/NandhaKishorM/laya) (integrating): tool coordinator + answer quality gate |
 | Local AI | Ollama / rules fallback when Laya confidence is low or Laya is down |
 
 Same spine shows up in public trees:
@@ -164,7 +164,7 @@ My split:
 | Layer | Runs where | Outage behaviour |
 |-------|------------|------------------|
 | Shell loop + git + `gh` | Laptop / host | Keeps ticking |
-| Laya / Ollama / rules | Local decision plane | Still labels next action and quality |
+| [Laya](https://github.com/NandhaKishorM/laya) / Ollama / rules | Local decision plane | Still labels next action and quality |
 | Cursor coder | Cloud models behind Cursor | Degrades when providers fail |
 | Tester / archive scripts | Local evidence | Still verifies what already shipped |
 
@@ -172,7 +172,7 @@ Lesson: **keep decisions local; rent generation.** Company data stays off random
 
 ---
 
-## Decision models (Laya), not chat-as-classifier
+## Decision models ([Laya](https://github.com/NandhaKishorM/laya)), not chat-as-classifier
 
 We are integrating [Laya](https://github.com/NandhaKishorM/laya) (Apache 2.0, self-host) as the **decision plane** in the thin loop — not as another chat model.
 
@@ -214,7 +214,7 @@ Agent coding loops and autoresearch share one spine: **metric, budget, revert on
 2. Role prompts as markdown.  
 3. Task files as the only queue.  
 4. Preflight before every paid agent call.  
-5. Decision plane: Laya tool coordinator + answer quality gate (rules/Ollama fallback).  
+5. Decision plane: [Laya](https://github.com/NandhaKishorM/laya) tool coordinator + answer quality gate (rules/Ollama fallback).  
 6. Cloud/IDE coder only for hard edits (Cursor, Claude Code, OpenCode, …).  
 7. Comment the issue with each stage so humans can audit.
 
@@ -231,7 +231,7 @@ Do not start with a multi-agent product. Start with a timer and a folder.
 | mac-stats agents | https://github.com/raro42/mac-stats/tree/main/agents |
 | Stock checker AGENTS | https://github.com/raro42/ai-stock-checker/blob/main/AGENTS.md |
 | Karpathy LLM Wiki pattern | https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f |
-| Laya | https://github.com/NandhaKishorM/laya |
+| [Laya](https://github.com/NandhaKishorM/laya) | https://github.com/NandhaKishorM/laya |
 
 ---
 
